@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="body">
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform
 </p>
+<div class="form-control">
     <form id="survey-form">
         <label for="name" id="name-label">Name</label>
         <input id="name" type="text" placeholder="Enter your name">
@@ -17,32 +20,65 @@
         <input id="email" type="email" placeholder="Enter your email"> 
         <label for="number" id="number-label">Age</label>
         <input id="number" type="number" min="0" max="100" placeholder="Enter your age">
-        <select id="dropdown"></select>
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown">
+            <option>Student</option>
+            <option>Full Time</option>
+            <option>Full Time Learner</option>
+            <option>Prefer Not To Say</option>
+        </select>
         <label for="radio-name">Would you recommend freeCodeCamp to a friend?</label>
         <fieldset id="radio-name">
+            <div class="controls">
+            <label class="radio">
             <input type="radio" value="Definitely">
-            <input type="radio" value="Maybe">
-            <input type="radio" value="Not sure">
+            Definately
+            </label>
+            <label class="radio">
+            <input type="radio" value="Definitely">
+            Definately
+            </label>
+            <label class="radio">
+            <input type="radio" value="Definitely">
+            Definately
+            </label>
+        </div>
         </fieldset>
             <fieldset id="checkbox">
-                <input type="checkbox" value="Front-end">
-                <input type="checkbox" value="Back-end">
-                <input type="checkbox" value="Data">
-                <input type="checkbox" value="Chellenges">
-                <input type="checkbox" value="Community">
-                <input type="checkbox" value="Help">
-                <input type="checkbox" value="Videos">
-                <input type="checkbox" value="Meet-ups">
-                <input type="checkbox" value="Wiki">
-                <input type="checkbox" value="Forum">
-                <input type="checkbox" value="Courses"> 
+                <div class="controls">
+                <label class="radio">
+                    <input type="checkbox" value="Front-end"> 
+                    Front End
+                </label>
+                <label class="radio">
+                    <input type="checkbox" value="Front-end"> 
+                    Front End
+                </label>
+                <label class="radio">
+                    <input type="checkbox" value="Front-end"> 
+                    Front End
+                </label>
+                <label class="radio">
+                    <input type="checkbox" value="Front-end"> 
+                    Front End
+                </label>
+                <label class="radio">
+                    <input type="checkbox" value="Front-end"> 
+                    Front End
+                </label>
+                <label class="radio">
+                    <input type="checkbox" value="Front-end"> 
+                    Front End
+                </label>
+            </div>
             </fieldset> 
             <textarea>
 
             </textarea>   
             <button id="submit">Submit</button> 
  </form>
-
+</div>
+</div>
 
 </body>
 </html>
